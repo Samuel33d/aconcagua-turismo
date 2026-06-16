@@ -110,7 +110,7 @@ export default function ModalidadesSection() {
             >
               Ver destinos
             </a>
-          </StaggerItem>
+          </FadeUp>
 
           {/* ── Card 2: Viajes Privados ── */}
           <FadeUp delay={0.1} className="relative bg-white rounded-2xl border-2 border-brand-navy shadow-md p-6 lg:p-8 lg:max-w-md lg:w-full">
@@ -169,7 +169,7 @@ export default function ModalidadesSection() {
             >
               Cotizar viaje privado
             </a>
-          </StaggerItem>
+          </FadeUp>
 
         </div>
       </div>
