@@ -1,4 +1,4 @@
-import { FadeLeft, StaggerContainer, StaggerItem } from '@/components/motion'
+import { FadeLeft, FadeUp } from '@/components/motion'
 
 const SERVICIOS = [
   {
@@ -107,22 +107,21 @@ export default function ServicesSection() {
           </FadeLeft>
 
           {/* Columna derecha — 3 cards en fila */}
-          <StaggerContainer className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {SERVICIOS.map((servicio) => (
-              <StaggerItem key={servicio.id} className="flex flex-col items-start gap-4 p-5 rounded-2xl bg-brand-light">
-                {/* Ícono en círculo */}
+          <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {SERVICIOS.map((servicio, i) => (
+              <FadeUp key={servicio.id} delay={i * 0.1} className="flex flex-col items-start gap-4 p-5 rounded-2xl bg-brand-light">
                 <div className="w-12 h-12 rounded-full bg-brand-sky flex items-center justify-center shrink-0">
                   {servicio.icono}
                 </div>
                 <h3 className="font-display text-base font-bold text-brand-navy">
                   {servicio.titulo}
                 </h3>
-                <p className="text-sm text-brand-dark leading-relaxed">
+                <p className="text-base text-brand-dark leading-relaxed">
                   {servicio.texto}
                 </p>
-              </StaggerItem>
+              </FadeUp>
             ))}
-          </StaggerContainer>
+          </div>
 
         </div>
       </div>

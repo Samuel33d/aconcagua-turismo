@@ -2,6 +2,8 @@ import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import ModalidadesSection from '@/components/ModalidadesSection'
 import ServicesSection from '@/components/ServicesSection'
+import NosotrosSection from '@/components/NosotrosSection'
+import ComoFuncionaSection from '@/components/ComoFuncionaSection'
 import DestinosSection from '@/components/DestinosSection'
 import FlotaSection from '@/components/FlotaSection'
 import ArtistasSection from '@/components/ArtistasSection'
@@ -17,6 +19,8 @@ export default function Home() {
         <HeroSection />
         <ModalidadesSection />
         <ServicesSection />
+        <NosotrosSection />
+        <ComoFuncionaSection />
         <DestinosSection />
         <FlotaSection />
         <ArtistasSection />

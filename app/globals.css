@@ -20,4 +20,5 @@ body {
 
 html {
   scroll-padding-top: 85px;
+  scroll-behavior: smooth;
 }

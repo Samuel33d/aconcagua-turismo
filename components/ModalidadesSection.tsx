@@ -1,4 +1,4 @@
-import { FadeUp, StaggerContainer, StaggerItem } from '@/components/motion'
+import { FadeUp } from '@/components/motion'
 
 const WA_URL = 'https://wa.me/56959901887'
 
@@ -58,10 +58,10 @@ export default function ModalidadesSection() {
         </FadeUp>
 
         {/* Cards */}
-        <StaggerContainer className="flex flex-col gap-6 lg:flex-row lg:gap-8 lg:justify-center">
+        <div className="flex flex-col gap-6 lg:flex-row lg:gap-8 lg:justify-center">
 
           {/* ── Card 1: Excursiones Grupales ── */}
-          <StaggerItem className="bg-white rounded-2xl border border-brand-sky shadow-md p-6 lg:p-8 lg:max-w-md lg:w-full">
+          <FadeUp className="bg-white rounded-2xl border border-brand-sky shadow-md p-6 lg:p-8 lg:max-w-md lg:w-full">
 
             {/* Ícono */}
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-brand-sky mb-5">
@@ -113,7 +113,7 @@ export default function ModalidadesSection() {
           </StaggerItem>
 
           {/* ── Card 2: Viajes Privados ── */}
-          <StaggerItem className="relative bg-white rounded-2xl border-2 border-brand-navy shadow-md p-6 lg:p-8 lg:max-w-md lg:w-full">
+          <FadeUp delay={0.1} className="relative bg-white rounded-2xl border-2 border-brand-navy shadow-md p-6 lg:p-8 lg:max-w-md lg:w-full">
 
             {/* Badge POPULAR */}
             <span className="absolute top-4 right-4 bg-brand-navy text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
@@ -171,7 +171,7 @@ export default function ModalidadesSection() {
             </a>
           </StaggerItem>
 
-        </StaggerContainer>
+        </div>
       </div>
     </section>
   )

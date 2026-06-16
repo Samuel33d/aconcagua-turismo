@@ -80,7 +80,7 @@ export default function DestinosSection() {
           </p>
         </FadeUp>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
           {DESTINOS.map((destino, i) => (
             <FadeUp
               key={destino.slug}
