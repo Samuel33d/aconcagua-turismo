@@ -79,14 +79,6 @@ export default function NosotrosSection() {
               ))}
             </div>
 
-            <div className="mt-6 rounded-2xl bg-brand-terracota/5 border border-brand-terracota/20 p-6">
-              <p className="font-script text-2xl text-brand-navy mb-2 leading-snug">
-                "De las micros de Santiago al Salón Cama"
-              </p>
-              <p className="text-sm text-brand-dark">
-                La Combo Tortuga empezó tocando en las micros de Santiago. Hoy recorren Chile en nuestro Bus Salón Cama. Esa es la diferencia que hacemos.
-              </p>
-            </div>
           </FadeRight>
 
         </div>
