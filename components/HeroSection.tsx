@@ -1,9 +1,6 @@
 import Image from 'next/image'
 import { FadeLeft, FadeRight } from '@/components/motion'
-
-const WA_URL = 'https://wa.me/56959901887'
-const WA_DESTINO = 'https://wa.me/56959901887?text=Hola%2C+quiero+consultar+sobre+destinos+disponibles'
-const WA_PASAJEROS = 'https://wa.me/56959901887?text=Hola%2C+quiero+cotizar+un+viaje+para+mi+grupo'
+import CotizadorBar from '@/components/CotizadorBar'
 
 const FOTO_CARDS = [
   {
@@ -69,52 +66,7 @@ export default function HeroSection() {
               Staff incluido, destinos increíbles y experiencia que marca la diferencia.
             </p>
 
-            {/* Barra de cotización — campos funcionales con link a WA */}
-            <div className="rounded-2xl bg-white shadow-lg overflow-hidden">
-              <div className="flex flex-col sm:flex-row">
-
-                <a
-                  href={WA_DESTINO}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 px-5 py-4 flex-1 border-b sm:border-b-0 sm:border-r border-gray-100 hover:bg-brand-light transition-colors duration-150 group"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-brand-terracota shrink-0" aria-hidden="true">
-                    <path d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6z" />
-                    <circle cx="12" cy="8" r="2" fill="white" />
-                  </svg>
-                  <div>
-                    <p className="text-[11px] text-gray-400 font-medium uppercase tracking-wide">Destino</p>
-                    <p className="text-sm font-semibold text-brand-dark group-hover:text-brand-terracota transition-colors">¿A dónde quieres ir?</p>
-                  </div>
-                </a>
-
-                <a
-                  href={WA_PASAJEROS}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 px-5 py-4 flex-1 border-b sm:border-b-0 sm:border-r border-gray-100 hover:bg-brand-light transition-colors duration-150 group"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-brand-terracota shrink-0" aria-hidden="true">
-                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                  </svg>
-                  <div>
-                    <p className="text-[11px] text-gray-400 font-medium uppercase tracking-wide">Pasajeros</p>
-                    <p className="text-sm font-semibold text-brand-dark group-hover:text-brand-terracota transition-colors">¿Cuántos son?</p>
-                  </div>
-                </a>
-
-                <a
-                  href={WA_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-brand-terracota text-white font-bold px-8 py-4 hover:opacity-90 transition-opacity min-h-[56px]"
-                >
-                  Cotizar
-                </a>
-
-              </div>
-            </div>
+            <CotizadorBar />
 
             <p className="mt-4 text-xs text-white/50 font-medium">
               ✓ Staff incluido&nbsp; · &nbsp;✓ Buses propios&nbsp; · &nbsp;✓ Puntualidad garantizada
